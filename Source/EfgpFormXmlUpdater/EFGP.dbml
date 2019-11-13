@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EFGP" Class="EFGPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.100.101;Initial Catalog=EFGP;Persist Security Info=True;User ID=sa" SettingsObjectName="EfgpFormXmlUpdater.Properties.Settings" SettingsPropertyName="EFGPConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.FormInstance" Member="FormInstance">
+    <Type Name="FormInstance">
+      <Column Name="OID" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="creatorOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="definitionOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="fieldValues" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="signedFieldValues" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="objectVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="serialNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="maskFieldValues" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProcessInstance" Member="ProcessInstance">
+    <Type Name="ProcessInstance">
+      <Column Name="OID" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="objectVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="contextOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="currentState" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="invokeOrganizationUnitOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="requesterOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="serialNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="isMain" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="createdTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="processInstanceName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="processDefinitionId" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="relationalManOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="defaultAssignmentType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="referContainerOID" Type="System.String" DbType="Char(32)" CanBeNull="true" />
+      <Column Name="numOfNotification" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="subject" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="referOrganizationUnitOID" Type="System.String" DbType="Char(32)" CanBeNull="true" />
+      <Column Name="abortComment" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="abortable" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="bundleContainer" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="abortedManOID" Type="System.String" DbType="Char(32)" CanBeNull="true" />
+      <Column Name="abortedManType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sysIntegratedWith" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="insLevelOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="dueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="additionalRules" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="lastNoticeTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="redefinableHeaderOID" Type="System.String" DbType="NChar(32)" CanBeNull="true" />
+      <Column Name="mobilityProcess" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="processModel" Type="System.String" DbType="NChar(4)" CanBeNull="true" />
+      <Column Name="isExistCritical" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LocalRelevantData" Member="LocalRelevantData">
+    <Type Name="LocalRelevantData">
+      <Column Name="OID" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="containerOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="objectVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="valueOID" Type="System.String" DbType="Char(32)" CanBeNull="true" />
+      <Column Name="dataTypeOID" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

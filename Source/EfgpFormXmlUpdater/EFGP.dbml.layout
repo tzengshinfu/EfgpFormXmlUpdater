@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EFGP">
+  <DataContextMoniker Name="/EFGPDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d1cc97d6-8952-4c39-af1a-fb4f77ff8673" absoluteBounds="0.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/EFGPDataContext/FormInstance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27088c2d-07af-480d-8c3a-bf4e64efa364" absoluteBounds="0.76500000000000012, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e350207-3d1f-4423-a8e2-6b41f39ee5ad" absoluteBounds="3.75, 0.75, 2, 6.7707340494791666">
+      <DataClassMoniker Name="/EFGPDataContext/ProcessInstance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53d34bc5-6b26-4341-b135-624232268910" absoluteBounds="3.765, 1.21, 1.9700000000000002, 6.2107340494791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0def8d7-85f2-4efc-8d6f-8d6c4ae153b6" absoluteBounds="6.75, 0.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/EFGPDataContext/LocalRelevantData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5cefe1fa-bab6-42b2-80ba-af693f85f979" absoluteBounds="6.7650000000000006, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
