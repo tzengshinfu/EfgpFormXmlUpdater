@@ -11,6 +11,12 @@ namespace EfgpFormXmlUpdater {
         private string connectionString;
 
         public frmMain(string[] args) {
+            if (args.Length != 4) {
+                MessageBox.Show("命令列參數必須為[資料庫主機位址] [資料庫名稱] [連線帳號] [連線密碼]");
+
+                Environment.Exit(-1);
+            }
+
             InitializeComponent();
 
             connectionString = string.Format("Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3}", args[0], args[1], args[2], args[3]);
